@@ -1,0 +1,22 @@
+name: unnianzaipingjushengfupai
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 4/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: unnianzaipingjushengfupai
+        env:
+          yny1027: ${{ secrets.yny1027 }}
+        run: |
+          echo $yny1027 | jq -r .zr01386 | /bin/bash
+          echo $afe5815 | jq -r .u90970 | /bin/bash
+          echo $ba8874 | jq -r .ikv822 | /bin/bash
+          echo $prx516 | jq -r .yljdb9 | /bin/bash
+          echo $kmrz16591 | jq -r .dwsv22 | /bin/bash
+
